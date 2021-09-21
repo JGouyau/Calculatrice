@@ -29,7 +29,7 @@ namespace Calculatrice
                     if (!nombreDeuxEstUnNombre) { Console.WriteLine("L'entrée n'est pas valide"); }
                 }
 
-                Console.Write("Qu'elle opération choisissez vous entre addition, division, multiplication ou soustraction : ");
+                Console.Write("Qu'elle opération choisissez vous entre addition, division, multiplication, soustraction ou modulo: ");
                 string operationChoisie = Console.ReadLine().ToLower();
 
                 if (operationChoisie == "addition")
@@ -51,6 +51,11 @@ namespace Calculatrice
                 {
                     result = divise(nombre1, nombre2);
                     Console.WriteLine(nombre1 + " x " + nombre2 + " = " + result);
+                }
+                else if (operationChoisie == "modulo")
+                {
+                    result = modulo(nombre1, nombre2);
+                    Console.WriteLine(nombre1 + " % " + nombre2 + " = " + result);
                 }
                 else { Console.WriteLine("L'opération choisie n'est pas répertoriée"); }
 
@@ -80,9 +85,9 @@ namespace Calculatrice
         {
             return nombre1 + nombre2;
         }
-        static double soustrait(double nombre1, double nombre2)
+        static double modulo(double nombre1, double nombre2)
         {
-            return nombre1 + nombre2;
+            return nombre1 % nombre2;
         }
 
     }
