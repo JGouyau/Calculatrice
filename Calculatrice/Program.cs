@@ -50,7 +50,7 @@ namespace Calculatrice
                 else if (operationChoisie == "division")
                 {
                     result = divise(nombre1, nombre2);
-                    Console.WriteLine(nombre1 + " x " + nombre2 + " = " + result);
+                    Console.WriteLine(nombre1 + " / " + nombre2 + " = " + result);
                 }
                 else if (operationChoisie == "modulo")
                 {
@@ -75,15 +75,15 @@ namespace Calculatrice
         }
         static double multiplie(double nombre1, double nombre2)
         {
-            return nombre1 + nombre2;
+            return nombre1 * nombre2;
         }
         static double divise(double nombre1, double nombre2)
         {
-            return nombre1 + nombre2;
+            return nombre1 / nombre2;
         }
         static double soustrait(double nombre1, double nombre2)
         {
-            return nombre1 + nombre2;
+            return nombre1 - nombre2;
         }
         static double modulo(double nombre1, double nombre2)
         {
